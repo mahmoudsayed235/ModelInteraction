@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class loaderController : MonoBehaviour
 {
-    private Transform initializedTransofrm;
+    public GameObject loader;
     /*
      * there is an issue with the attached Model 'ArgumentException: JSON parse error: Invalid value.'
      * so I use url of the model in the GLTFast documentation
@@ -14,11 +14,23 @@ public class loaderController : MonoBehaviour
     /*
     * download model using url on Awake function 
     * */
-
+    GLTFast.GltfAsset gltf;
     private void Awake()
     {
-        var gltf = gameObject.AddComponent<GLTFast.GltfAsset>();
+        gltf = gameObject.AddComponent<GLTFast.GltfAsset>();
         gltf.url = url;
+        hideLoader();
+        
+
+    }
+    void hideLoader()
+    {
+        if (gltf.isDone)
+        {
+            loader.SetActive(false);
+            return;
+        }
+        Invoke("hideLoader", 0.2f);
     }
     /*
     * reset the model to the initial state

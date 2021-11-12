@@ -5,6 +5,28 @@ using UnityEngine;
 public class pinchGesturesController : MonoBehaviour
 {
     public float zoomSpeed = 0.01f;
+    /*
+     * reset camera to the initial state
+     * 
+     * */
+    public void Reset()
+    {
+        if (Camera.main.orthographic)
+        {
+            Camera.main.orthographicSize = 5f;
+
+        }
+        else
+        {
+            Camera.main.fieldOfView = 60f;
+
+        }
+
+    }
+    /*
+     * zoom in/out to the model by using tow fingers
+     * 
+     */
     private void Update()
     {
 

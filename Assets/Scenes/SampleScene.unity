@@ -133,6 +133,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 96015743}
+  - component: {fileID: 96015744}
   m_Layer: 0
   m_Name: MainObject
   m_TagString: Untagged
@@ -148,12 +149,25 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 96015742}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -58.07216, y: 56.00659, z: -119.00049}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &96015744
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 96015742}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6ee484d4b154ce04d89a7a28b3b18202, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  url: https://github.com/nandiniiys/3D-Visualization-of-a-Building/blob/main/McCormackBuildingFiles/Mck04/Mck04.gltf
 --- !u!1 &705507993
 GameObject:
   m_ObjectHideFlags: 0

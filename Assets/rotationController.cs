@@ -7,7 +7,7 @@ public class rotationController : MonoBehaviour
     public float rotateSpeed = .01f;
     private Quaternion rotation;
     /*
-     * rotate the model by using one finger 
+     * rotate the model by using one finger  
      * 
      */
     [System.Obsolete]

@@ -12,7 +12,7 @@ public class loaderController : MonoBehaviour
 
     public string url= "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf";
     /*
-    * download model using url on Awake function
+    * download model using url on Awake function 
     * */
 
     private void Awake()

@@ -24,7 +24,7 @@ public class pinchGesturesController : MonoBehaviour
 
     }
     /*
-     * zoom in/out to the model by using tow fingers
+     * zoom in/out to the model by using tow fingers 
      * 
      */
     private void Update()

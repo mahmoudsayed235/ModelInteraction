@@ -4,9 +4,10 @@ using UnityEngine;
 
 public class pinchGesturesController : MonoBehaviour
 {
-    public float zoomSpeed = 0.001f;
+    public float zoomSpeed = 0.01f;
     private void Update()
     {
+
         if (Input.touchCount == 2)
         {
             Touch pointZero = Input.GetTouch(0);

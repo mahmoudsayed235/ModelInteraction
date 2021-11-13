@@ -5,12 +5,7 @@ using UnityEngine;
 public class loaderController : MonoBehaviour
 {
     public GameObject loader;
-    /*
-     * there is an issue with the attached Model 'ArgumentException: JSON parse error: Invalid value.'
-     * so I use url of the model in the GLTFast documentation
-    */
-
-    public string url= "https://raw.githubusercontent.com/KhronosGroup/glTF-Sample-Models/master/2.0/Duck/glTF/Duck.gltf";
+    public string url= "https://raw.githubusercontent.com/nandiniiys/3D-Visualization-of-a-Building/main/McCormackBuildingFiles/Mck04/Mck04.gltf";
     /*
     * download model using url on Awake function 
     * */
@@ -23,11 +18,18 @@ public class loaderController : MonoBehaviour
         
 
     }
+    /*
+     * function to hide the load 
+     * it make a check condition every 0.2 part of second and stop when the download finished
+     */
     void hideLoader()
     {
         if (gltf.isDone)
         {
             loader.SetActive(false);
+            var material = gltf.GetMaterial();
+            Debug.LogFormat("The first material is called {0}", material.name);
+
             return;
         }
         Invoke("hideLoader", 0.2f);

@@ -21,7 +21,6 @@ public class rotationController : MonoBehaviour
             if (pointZero.phase == TouchPhase.Moved)
             {
                 rotation = Quaternion.Euler(pointZero.deltaPosition.y, pointZero.deltaPosition.x, 0f);
-                //transform.rotation = rotation * transform.rotation;    
                 transform.RotateAround(Vector3.up, -pointZero.deltaPosition.x*rotateSpeed);
                 transform.RotateAround(Vector3.right, pointZero.deltaPosition.y * rotateSpeed);
             }           

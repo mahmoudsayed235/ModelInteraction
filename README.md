@@ -3,7 +3,7 @@
 The setups steps expect following tools installed on the system.
 
 - Github
-- Unity [2020.3.22f1]
+- Unity [LTS 2020.3.22f1]
 
 ##### 1. Check out the repository
 
